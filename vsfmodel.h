@@ -23,6 +23,11 @@
 #define LAT_ACCEL  ( dstates[0] )
 #define LONG_ACCEL ( dstates[1] )
 
+#define sind(x) (sin(fmod((x),360) * M_PI / 180))
+#define tand(x) (tan(fmod((x),360) * M_PI / 180))
+#define atand(x) (fmod(atan(x)*180/M_PI,360) )
+#define atan2d(x,y) (fmod(atan2(x,y)*180/M_PI,360) )
+
 real_T slip_angle[4] ={0,0,0,0};
 real_T long_f[4] ={0,0,0,0};
 real_T lat_f[4] ={0,0,0,0};

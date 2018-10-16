@@ -1,4 +1,4 @@
-	clear all
+        clear all
 	load simin
 	% Parâmetros do modelo.
 	a                   = 1.035; 
@@ -99,7 +99,7 @@
 	D = zeros(size(B))
 
     %sys = ss( A,B,C,D);
-    %d_sys =v c2d(sys,8e-5)
+    %d_sys = c2d(sys,8e-5)
 	Q = diag([4,1,0.001,0.001]);
 	R = 1e-8;
 	LQRopt = lqrd(A,B,Q,R,8e-5)
